@@ -18,9 +18,6 @@ zstyle ':prezto:*:*' color 'yes'
 # Add additional directories to load prezto modules from
 # zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
 
-# Allow module overrides when pmodule-dirs causes module name collisions
-# zstyle ':prezto:load' pmodule-allow-overrides 'yes'
-
 # Set the Zsh modules to load (man zshmodules).
 # zstyle ':prezto:load' zmodule 'attr' 'stat'
 
@@ -29,19 +26,51 @@ zstyle ':prezto:*:*' color 'yes'
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
-zstyle ':prezto:load' pmodule \
-  'environment' \
-  'terminal' \
-  'editor' \
-  'history' \
-  'directory' \
-  'spectrum' \
-  'utility' \
-  'completion' \
-  'history-substring-search' \
-  'prompt'
+# zstyle ':prezto:load' pmodule \
+#   'environment' \
+#   'terminal' \
+#   'editor' \
+#   'history' \
+#   'directory' \
+#   'spectrum' \
+#   'utility' \
+#   'completion' \
+#   'prompt'
 
-#
+
+# zstyle ':prezto:load' pmodule \
+#        'environment' \
+#        'terminal' \
+#        'editor' \
+#        'history' \
+#        'directory' \
+#        'spectrum' \
+#        'utility' \
+#        'completion' \
+#        'prompt' \
+#        'history-substring-search' \
+#        'git'
+
+
+zstyle ':prezto:load' pmodule \
+       'environment' \
+       'terminal' \
+       'editor' \
+       'history' \
+       'directory' \
+       'spectrum' \
+       'utility' \
+       'completion' \
+       'archive' \
+       'fasd' \
+       'git' \
+       'osx' \
+       'syntax-highlighting' \
+       'history-substring-search' \
+       'ssh' \
+       'prompt'
+
+
 # Autosuggestions
 #
 
@@ -61,7 +90,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -130,7 +159,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'steeef'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
