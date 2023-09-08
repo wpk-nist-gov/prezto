@@ -73,4 +73,7 @@ if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 
-source ~/.zprofile_wpk
+# Load local config
+if [[ -s "${ZDOTDIR:-$HOME}/.zprofile_local" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprofile_local"
+fi
