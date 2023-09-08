@@ -27,27 +27,8 @@ zstyle ':prezto:*:*' color 'yes'
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
-       'environment' \
-       'terminal' \
-       'editor' \
-       'history' \
-       'directory' \
-       'spectrum' \
-       'utility' \
-       'completion' \
-       'archive' \
-       'fasd' \
-       'git' \
-       'osx' \
-       'syntax-highlighting' \
-       'history-substring-search' \
-       'ssh' \
-       'prompt'
-
-zstyle ':prezto:load' pmodule \
        'contrib-prompt' \
        'prompt' \
-       'fzf-tab' \
        'environment' \
        'terminal' \
        'editor' \
@@ -65,7 +46,6 @@ zstyle ':prezto:load' pmodule \
        'spectrum' \
        'ssh' \
        'prompt' \
-        # 'conda-zsh-completion' \
        'autosuggestions'
 
 
